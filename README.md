@@ -33,4 +33,4 @@ Audit a recent election and determine the following results from the data.
 
 ## Challenge Summary:
 
-This script was very effective at determining the results of this multi-county election. However, if some modifications it could be used for other elections data as well. For instance, we would want to include a State/Territory analysis as well as possibly a Country analysis. By doing so, we could effectively use this script for numerous elections results.
+This script was very effective at determining the results of this multi-county election. However, with some modifications, it could be used for other election data as well. For instance, we would want to include a State/Territory analysis as well as possibly a Country analysis. By doing so, we could effectively use this script for numerous election results.
