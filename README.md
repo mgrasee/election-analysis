@@ -15,20 +15,20 @@ Audit a recent election and determine the following results from the data.
 2. Software: 
    Python 3.8.5 and Visual Studio Code 1.56.2
 
-## Election Results
-- Total Votes
+## Election Results:
+- Total Votes:
   - 369,711
-- Total Votes by County
+- Total Votes by County:
   - Jefferson: 38,855 or 10.5% of Total Votes
   - Denver: 306,055 or 82.8% of Total Votes
   - Arapahoe: 24,801 or 6.7% of Total Votes
 - County with largest number of votes:
   - Denver
-- Total Votes by Candidate
+- Total Votes by Candidate:
   - Charles Casper Stockham: 85,213 or 23% of Total Votes
   - Diana Degette: 272,892 or 73.8% of Total Votes
   - Raymon Anthony Doane: 11,606 or 3.1% of Total Votes
-- Election Winner
+- Election Winner:
   - Diana Degette with 272,892 votes or 73.8% of Total Votes
 
 ## Challenge Summary:
