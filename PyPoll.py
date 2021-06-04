@@ -44,24 +44,28 @@ with open(election_file) as election_data:
             candidate_options.append(candidate_name)
             candidate_votes[candidate_name] = 0
         candidate_votes[candidate_name] +=1
-for candidate_name in candidate_votes:
-    votes = candidate_votes[candidate_name]
-    vote_percentage = float(votes) / float(total_votes) * 100
-    print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
-    if(votes > winning_count) and (vote_percentage > winning_percentage):
-        winning_count = votes
-        winning_percentage = vote_percentage
-        winning_candidate = candidate_name
-winning_candidate_summary = (
-    f"--------------------\n"
-    f"Winner: {winning_candidate}\n"
-    f"Winning Vote Count: {winning_count:,}\n"
-    f"Winning Percentage: {winning_percentage:.1f}\n")
-print(winning_candidate_summary)
-#print(total_votes)
-#print(candidate_votes)
-
-    #Write data
-    #with open(write_election_file,"w") as outfile:
-        #outfile.write("Arapahoe\nDenver\nJefferson")
-
+with open(write_election_file,"w") as outfile:
+    election_results = (
+        f"\nElection Results\n"
+        f"--------------------\n"
+        f"Total Votes: {total_votes:,}\n"
+        f"--------------------\n")
+    print(election_results, end="")
+    outfile.write(election_results)
+    for candidate_name in candidate_votes:
+        votes = candidate_votes[candidate_name]
+        vote_percentage = float(votes) / float(total_votes) * 100
+        canidate_results = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        print(canidate_results)
+        outfile.write(canidate_results)
+        if(votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_percentage = vote_percentage
+            winning_candidate = candidate_name
+    winning_candidate_summary = (
+        f"--------------------\n"
+        f"Winner: {winning_candidate}\n"
+        f"Winning Vote Count: {winning_count:,}\n"
+        f"Winning Percentage: {winning_percentage:.1f}\n")
+    print(winning_candidate_summary)
+    outfile.write(winning_candidate_summary)
