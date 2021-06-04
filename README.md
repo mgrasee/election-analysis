@@ -11,10 +11,9 @@ Audit a recent Election and determine the following results from the data.
 
 ## Resources:
 1. Data:
-  A. election_results.csv
+   election_results.csv
 2. Software: 
-  B.Python 3.8.5
-  C.Visual Studio Code 1.56.2
+   Python 3.8.5 and Visual Studio Code 1.56.2
 
 ## Election Results
 
