@@ -17,7 +17,7 @@ Audit a recent election and determine the following results from the data.
 
 ## Election Results
 - Total Votes
-  -369,711
+  - 369,711
 - Total Votes by County
   - Jefferson: 38,855 or 10.5% of Total Votes
   - Denver: 306,055 or 82.8% of Total Votes
